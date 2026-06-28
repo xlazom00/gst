@@ -1,0 +1,33 @@
+From c1ea92a7c7460863f208fa2979538106c762059c Mon Sep 17 00:00:00 2001
+From: Michal Lazo <xlazom00@gmail.com>
+Date: Sun, 28 Jun 2026 20:10:06 +0000
+Subject: [PATCH] clean up
+
+---
+ debian/control                  | 2 --
+ debian/gstreamer1.0-wpe.install | 2 --
+ 2 files changed, 4 deletions(-)
+
+diff --git a/debian/control b/debian/control
+index 74c4829..4da1671 100644
+--- a/debian/control
++++ b/debian/control
+@@ -96,8 +96,6 @@ Build-Depends: debhelper-compat (= 13),
+                libwebp-dev (>= 0.2.1),
+                libwebrtc-audio-processing-dev (>= 0.2),
+                libwildmidi-dev (>= 0.4.2),
+-               libwpebackend-fdo-1.0-dev (>= 1.8.0) [linux-any],
+-               libwpewebkit-2.0-dev [amd64 arm64 armel armhf i386 mips64el ppc64el riscv64 s390x ia64 loong64 powerpc sparc64 x32],
+                libx11-dev,
+                libx11-xcb-dev,
+                libx265-dev,
+diff --git a/debian/gstreamer1.0-wpe.install b/debian/gstreamer1.0-wpe.install
+index b9396ba..e69de29 100644
+--- a/debian/gstreamer1.0-wpe.install
++++ b/debian/gstreamer1.0-wpe.install
+@@ -1,2 +0,0 @@
+-usr/lib/*/gst-plugins-bad/wpe-extension/libgstwpeextension.so
+-usr/lib/*/gstreamer-1.0/libgstwpe.so
+-- 
+2.53.0
+
